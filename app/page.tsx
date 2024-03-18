@@ -1,113 +1,84 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      <>
+        {/* <svg
+          width="360.1"
+          height="57.151824744663514"
+          viewBox="0 0 408.28932591830915 64.80000000000001"
+          className="looka-1j8o68f"
+        >
+          <defs id="SvgjsDefs1792" />
+          <g
+            id="SvgjsG1793"
+            featurekey="nameLeftFeature-0"
+            transform="matrix(2.5423729087524944,0,0,2.5423729087524944,-4.627117918058901,0.15254182495011293)"
+            fill="#ffffff"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+            <path d="M3.74 5.84 l0 5.88 l7.34 0 l0 -5.88 l1.92 0 l0 14.16 l-1.92 0 l0 -6.48 l-7.34 0 l0 6.48 l-1.92 0 l0 -14.16 l1.92 0 z M22.82 5.84 l6.06 14.16 l-2.24 0 l-1.42 -3.5 l-6.74 0 l-1.4 3.5 l-2.24 0 l6.24 -14.16 l1.74 0 z M19.16 14.82 l5.36 0 l-2.64 -6.5 l-0.04 0 z M35.72 5.84 c1.2933 0 2.32 0.32 3.08 0.96 s1.14 1.5 1.14 2.58 c0 1.5333 -0.81334 2.5734 -2.44 3.12 l0 0.04 l0.02 0 c0.92 0.10666 1.6567 0.49 2.21 1.15 s0.83 1.45 0.83 2.37 c0 1.1867 -0.45666 2.14 -1.37 2.86 s-2.09 1.08 -3.53 1.08 l-4.94 0 l0 -14.16 l5 0 z M35.32 11.72 c0.8 0 1.43 -0.18334 1.89 -0.55 s0.69 -0.89 0.69 -1.57 c0 -0.64 -0.2 -1.1467 -0.6 -1.52 s-0.92666 -0.56 -1.58 -0.56 l-3.08 0 l0 4.2 l2.68 0 z M35.54 18.32 c0.94666 0 1.68 -0.22 2.2 -0.66 s0.78 -1.02 0.78 -1.74 c0 -0.8 -0.26334 -1.42 -0.79 -1.86 s-1.27 -0.66 -2.23 -0.66 l-2.86 0 l0 4.92 l2.9 0 z M45.24 5.84 l0 14.16 l-1.92 0 l0 -14.16 l1.92 0 z M53.88 5.84 c1.2933 0 2.32 0.32 3.08 0.96 s1.14 1.5 1.14 2.58 c0 1.5333 -0.81334 2.5734 -2.44 3.12 l0 0.04 l0.02 0 c0.92 0.10666 1.6567 0.49 2.21 1.15 s0.83 1.45 0.83 2.37 c0 1.1867 -0.45666 2.14 -1.37 2.86 s-2.09 1.08 -3.53 1.08 l-4.94 0 l0 -14.16 l5 0 z M53.480000000000004 11.72 c0.8 0 1.43 -0.18334 1.89 -0.55 s0.69 -0.89 0.69 -1.57 c0 -0.64 -0.2 -1.1467 -0.6 -1.52 s-0.92666 -0.56 -1.58 -0.56 l-3.08 0 l0 4.2 l2.68 0 z M53.7 18.32 c0.94666 0 1.68 -0.22 2.2 -0.66 s0.78 -1.02 0.78 -1.74 c0 -0.8 -0.26334 -1.42 -0.79 -1.86 s-1.27 -0.66 -2.23 -0.66 l-2.86 0 l0 4.92 l2.9 0 z" />
+          </g>
+          <g
+            id="SvgjsG1794"
+            featurekey="inlineSymbolFeature-0"
+            transform="matrix(0.570422581182876,0,0,0.570422581182876,165,-4.27816935887157)"
+            fill="#ffffff"
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M71.9,74.2c0.1,0,0.2,0.1,0.3,0.1c0.4,0,0.8-0.3,1-0.7l2.5-7c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6l-2.5,7  C71.1,73.5,71.4,74,71.9,74.2z"
             />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M69.5,59.1l-6.6,3.1c-0.5,0.2-0.7,0.9-0.5,1.4c0.2,0.4,0.5,0.6,0.9,0.6c0.1,0,0.3,0,0.4-0.1l6.6-3.1  c0.5-0.2,0.7-0.9,0.5-1.4C70.6,59.1,70,58.9,69.5,59.1z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M71.8,52.5c0.2-0.5-0.1-1.1-0.6-1.3l-6.9-2.5c-0.5-0.2-1.1,0.1-1.3,0.6c-0.2,0.5,0.1,1.1,0.6,1.3l6.9,2.5  c0.1,0,0.2,0.1,0.4,0.1C71.3,53.2,71.6,52.9,71.8,52.5z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M77,48.3c0.1,0,0.3,0,0.4-0.1c0.5-0.2,0.7-0.9,0.5-1.4l-3.1-6.7c-0.2-0.5-0.9-0.7-1.4-0.5C73,39.8,72.8,40.5,73,41l3.1,6.7  C76.3,48,76.6,48.3,77,48.3z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M84.9,49.2c0.4,0,0.8-0.3,1-0.7l2.5-7c0.2-0.5-0.1-1.1-0.6-1.3c-0.5-0.2-1.1,0.1-1.3,0.6l-2.5,7c-0.2,0.5,0.1,1.1,0.6,1.3  C84.6,49.2,84.7,49.2,84.9,49.2z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M89.7,55.5c0.1,0,0.3,0,0.4-0.1l6.6-3.1c0.5-0.2,0.7-0.9,0.5-1.4c-0.2-0.5-0.9-0.7-1.4-0.5l-6.6,3.1  c-0.5,0.2-0.7,0.9-0.5,1.4C89,55.2,89.4,55.5,89.7,55.5z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M117.5,27.1H30.8c-3-14.1-11.2-15-11.9-15.1h-6.3c-1-2.4-3.3-4.5-6.1-4.5C2.9,7.5,0,10.4,0,14c0,3.6,2.9,6.6,6.5,6.6  c2.8,0,5.1-2.2,6.1-4.6h5.9c0.2,0,5.7,1.7,7.8,13.2c2.7,15.3,9.7,53.7,9.7,53.7c0,4.3,2.6,12.1,12.2,12.1h37l-1.5-3.9H48.1  c-4.1,0-5.9-3-6.7-5.1c6.5-0.4,24.3-1.6,40-2.7L80,78.4c-16,1.1-33.7,2.3-39.4,2.7C39.3,74.6,34.4,47,31.7,32h85.1  c3.9,0,6.7,3.2,6.2,7.1l-3.6,29.4c0,0.1-0.1,0.7-0.5,1.5l4.4,2.2c0.8-1.7,1-2.9,1-3.1l3.7-30.2C128.7,32.4,124.1,27.1,117.5,27.1z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M107.7,80.5l8.4-3.3c0.8-0.3,1.3-1,1.3-1.8c0-0.8-0.4-1.6-1.1-2L80.9,55.5c-0.7-0.4-1.6-0.3-2.3,0.3  C78,56.3,77.7,57.2,78,58l12,38.7c0.2,0.8,1,1.4,1.8,1.5c0.8,0.1,1.6-0.4,2-1.1l4.8-9.2l10.3,13.7c0.3,0.4,0.8,0.7,1.4,0.8  c0.1,0,0.2,0,0.3,0c0.4,0,0.9-0.1,1.3-0.4l6.3-4.9c0.4-0.3,0.7-0.8,0.8-1.4c0.1-0.6-0.1-1.1-0.4-1.6L107.7,80.5z M110.9,97.4  l-11-14.6c-0.4-0.5-1-0.8-1.6-0.8c-0.1,0-0.1,0-0.2,0c-0.7,0.1-1.3,0.5-1.7,1.1l-4,7.7l-9.1-29.3l26.9,13.6l-6.6,2.6  c-0.6,0.2-1.1,0.8-1.2,1.4c-0.2,0.6,0,1.3,0.4,1.8l11.2,14.2L110.9,97.4z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M99.2,103.7c-4.7,0-8.6,3.9-8.6,8.7c0,4.8,3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7C107.8,107.6,103.9,103.7,99.2,103.7z   M99.2,116.9c-2.5,0-4.5-2-4.5-4.5c0-2.5,2-4.5,4.5-4.5c2.5,0,4.5,2,4.5,4.5C103.7,114.8,101.7,116.9,99.2,116.9z"
+            />
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              d="M49.7,103.7c-4.7,0-8.6,3.9-8.6,8.7c0,4.8,3.9,8.7,8.6,8.7c4.7,0,8.6-3.9,8.6-8.7C58.3,107.6,54.4,103.7,49.7,103.7z   M49.7,116.9c-2.5,0-4.5-2-4.5-4.5c0-2.5,2-4.5,4.5-4.5c2.5,0,4.5,2,4.5,4.5C54.2,114.8,52.2,116.9,49.7,116.9z"
+            />
+          </g>
+          <g
+            id="SvgjsG1795"
+            featurekey="nameRightFeature-0"
+            transform="matrix(2.4193385390269357,0,0,2.4193385390269357,242.95171940937195,1.7420247599871708)"
+            fill="#ffffff"
+          >
+            <path d="M11.440000000000001 5.48 c1.84 0 3.2 0.54006 4.08 1.6201 l-1.56 1.42 c-0.24 -0.37334 -0.58 -0.67334 -1.02 -0.9 s-0.94666 -0.34 -1.52 -0.34 c-0.82666 0 -1.49 0.20334 -1.99 0.61 s-0.75 0.93 -0.75 1.57 c0 1.0667 0.70666 1.8133 2.12 2.24 l1.78 0.58 c1 0.32 1.7633 0.76666 2.29 1.34 s0.79 1.36 0.79 2.36 c0 1.3067 -0.46334 2.3634 -1.39 3.17 s-2.1034 1.21 -3.53 1.21 c-2.04 0 -3.5466 -0.65334 -4.52 -1.96 l1.58 -1.36 c0.30666 0.48 0.72666 0.85334 1.26 1.12 s1.1133 0.4 1.74 0.4 c0.78666 0 1.4533 -0.22666 2 -0.68 s0.82 -1.0133 0.82 -1.68 c0 -0.49334 -0.16666 -0.90668 -0.5 -1.24 s-0.93334 -0.63334 -1.8 -0.9 l-1.26 -0.42 c-1.2667 -0.42666 -2.1534 -0.97 -2.66 -1.63 s-0.76 -1.51 -0.76 -2.55 c0 -1.1067 0.44666 -2.0466 1.34 -2.82 s2.0466 -1.16 3.46 -1.16 z M27.939999999999998 5.84 l0 1.8 l-4.56 0 l0 12.36 l-1.92 0 l0 -12.36 l-4.56 0 l0 -1.8 l11.04 0 z M36.480000000000004 5.48 c2.1066 0 3.8634 0.69998 5.27 2.1 s2.11 3.18 2.11 5.34 c0 1.3733 -0.31334 2.63 -0.94 3.77 s-1.51 2.0366 -2.65 2.69 s-2.4034 0.98 -3.79 0.98 c-1.3733 0 -2.6266 -0.32334 -3.76 -0.97 s-2.02 -1.54 -2.66 -2.68 s-0.96 -2.4034 -0.96 -3.79 c0 -2.1066 0.69 -3.8734 2.07 -5.3 s3.15 -2.14 5.31 -2.14 z M31.14 12.92 c0 1.6 0.49998 2.94 1.5 4.02 s2.28 1.62 3.84 1.62 c1.5333 0 2.8066 -0.53334 3.82 -1.6 s1.52 -2.4134 1.52 -4.04 c0 -1.6133 -0.5 -2.9566 -1.5 -4.03 s-2.2866 -1.61 -3.86 -1.61 c-1.52 0 -2.7866 0.53334 -3.8 1.6 s-1.52 2.4134 -1.52 4.04 z M51.699999999999996 5.84 c1.3867 0 2.4734 0.34666 3.26 1.04 s1.18 1.6667 1.18 2.92 c0 0.94666 -0.32334 1.7733 -0.97 2.48 s-1.4767 1.1267 -2.49 1.26 l-0.02 0 l4.02 6.46 l-2.4 0 l-3.6 -6.24 l-2.14 0 l0 6.24 l-1.92 0 l0 -14.16 l5.08 0 z M51.14 12.08 c1 0 1.7433 -0.18336 2.23 -0.55002 s0.73 -0.94332 0.73 -1.73 c0 -1.52 -0.98666 -2.28 -2.96 -2.28 l-2.6 0 l0 4.56 l2.6 0 z M67.97999999999999 5.84 l0 1.8 l-7.22 0 l0 4.22 l6.72 0 l0 1.8 l-6.72 0 l0 4.54 l7.58 0 l0 1.8 l-9.5 0 l0 -14.16 l9.14 0 z" />
+          </g>
+        </svg> */}
+      </>
+      Home
+    </div>
   );
-}
+};
+
+export default Home;
