@@ -20,7 +20,7 @@
 .category-container ul a.active {
   color: whitesmoke;
 }
-
+/* 
 .products-card-wrapper::-webkit-scrollbar {
   width: 5px;
   background-color: rgb(51, 50, 50);
@@ -37,7 +37,7 @@
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-}
+} */
 
 @layer base {
   :root {

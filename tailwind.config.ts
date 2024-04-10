@@ -21,6 +21,7 @@ const config = {
     },
     extend: {
       colors: {
+        primary_bg: "#171717",
         border: "hsl(var(--border))",
         secendery: "#a3a3a3",
         input: "hsl(var(--input))",

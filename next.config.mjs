@@ -6,6 +6,8 @@ const nextConfig = {
       "rukminim2.flixcart.com",
       "demo.vercel.store",
       "cdn.dummyjson.com",
+      "encrypted-tbn0.gstatic.com",
+      "tailwindui.com",
     ],
   },
 };
